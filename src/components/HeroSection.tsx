@@ -46,7 +46,7 @@ const HeroSection = () => {
             // HELLO WORLD
           </p>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-wider text-primary glow mb-6">
-            JOHN DOE
+            JADTHEGOAT
           </h1>
           <div className="h-8 mb-8">
             <span className="font-mono text-lg md:text-xl text-muted-foreground">
