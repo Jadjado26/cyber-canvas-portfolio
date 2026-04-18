@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin, Gamepad2 } from "lucide-react";
 
 const socials = [
   { icon: Mail, label: "EMAIL", value: "dev@example.com", href: "mailto:dev@example.com" },
-  { icon: Github, label: "GITHUB", value: "github.com/johndoe", href: "https://github.com" },
-  { icon: Linkedin, label: "LINKEDIN", value: "linkedin.com/in/johndoe", href: "https://linkedin.com" },
+  { icon: Github, label: "GITHUB", value: "github.com/jadthegoat", href: "https://github.com/jadthegoat" },
+  { icon: Linkedin, label: "LINKEDIN", value: "linkedin.com/in/jadthegoat", href: "https://linkedin.com/in/jadthegoat" },
+  { icon: Gamepad2, label: "ROBLOX", value: "roblox.com/user/jadthegoat", href: "https://www.roblox.com/users/profile?username=jadthegoat" },
 ];
 
 const ContactSection = () => {
