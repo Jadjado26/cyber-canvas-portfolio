@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import profileAvatar from "@/assets/profile-avatar.png";
+import shrekMoustache from "@/assets/shrek-moustache.png";
 
 const stats = [
   { label: "LEVEL", value: "25" },
@@ -36,8 +37,15 @@ const AboutSection = () => (
             <div className="w-64 h-64 border border-border glow-box overflow-hidden">
               <img src={profileAvatar} alt="Developer profile" className="w-full h-full object-cover" width={512} height={512} />
             </div>
-            <div className="absolute -bottom-3 -right-3 border border-primary bg-background px-3 py-1 text-xs font-mono text-primary glow">
-              STATUS: ONLINE
+            <div className="absolute -bottom-4 -right-4 border border-primary bg-background p-1 glow-box">
+              <img
+                src={shrekMoustache}
+                alt="Shrek with moustache - online status"
+                width={80}
+                height={80}
+                loading="lazy"
+                className="w-20 h-20 object-cover"
+              />
             </div>
           </div>
         </motion.div>
