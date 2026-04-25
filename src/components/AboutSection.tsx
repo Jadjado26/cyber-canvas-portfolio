@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import profileAvatar from "@/assets/profile-avatar.png";
-import surgeBrawler from "@/assets/surge-brawler.png";
 
 const stats = [
   { label: "LEVEL", value: "25" },
@@ -37,15 +36,9 @@ const AboutSection = () => (
             <div className="w-64 h-64 border border-border glow-box overflow-hidden">
               <img src={profileAvatar} alt="Developer profile" className="w-full h-full object-cover" width={512} height={512} loading="lazy" />
             </div>
-            <a
-              href="https://brawlstars.fandom.com/wiki/Surge"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute -bottom-4 -right-4 w-20 h-20 border border-primary bg-background overflow-hidden glow-box hover:scale-110 transition-transform duration-200"
-              aria-label="View Surge brawler info"
-            >
-              <img src={surgeBrawler} alt="Surge brawler from Brawl Stars" className="w-full h-full object-cover" width={512} height={512} loading="lazy" />
-            </a>
+            <div className="absolute -bottom-3 -right-3 border border-primary bg-background px-3 py-1 text-xs font-mono text-primary glow">
+              STATUS: ONLINE
+            </div>
           </div>
         </motion.div>
 
