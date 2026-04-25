@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import brawlStarsLogo from "@/assets/brawl-stars-logo.png";
 
 const roles = ["Web Developer", "Software Engineer", "Full-Stack Developer", "UI/UX Enthusiast"];
 
@@ -70,6 +71,24 @@ const HeroSection = () => {
               className="border border-border px-8 py-3 text-xs tracking-[0.2em] font-mono text-muted-foreground hover:border-primary hover:text-primary transition-all duration-300"
             >
               CONTACT ME
+            </a>
+          </div>
+          <div className="mt-10 flex justify-center">
+            <a
+              href="https://supercell.com/en/games/brawlstars/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block hover:scale-105 transition-transform duration-200"
+              aria-label="Brawl Stars"
+            >
+              <img
+                src={brawlStarsLogo}
+                alt="Brawl Stars logo"
+                width={1024}
+                height={512}
+                loading="lazy"
+                className="h-20 md:h-24 w-auto"
+              />
             </a>
           </div>
         </motion.div>
