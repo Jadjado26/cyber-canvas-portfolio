@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import brawlStarsLogo from "@/assets/brawl-stars-logo.png";
 import realMadridLogo from "@/assets/real-madrid-logo.png";
-import itadoriYuji from "@/assets/itadori-yuji.png";
+import gojoSatoru from "@/assets/gojo-satoru.png";
 
 const roles = ["Web Developer", "Software Engineer", "Full-Stack Developer", "UI/UX Enthusiast"];
 
