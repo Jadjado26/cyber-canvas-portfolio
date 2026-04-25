@@ -118,7 +118,7 @@ const HeroSection = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Roblox"
-        className="hidden lg:block absolute right-4 bottom-0 z-20 hover:scale-105 transition-transform duration-200"
+        className="hidden lg:block absolute left-4 bottom-0 z-20 hover:scale-105 transition-transform duration-200"
       >
         <img
           src={gojoSatoru}
