@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import brawlStarsLogo from "@/assets/brawl-stars-logo.png";
 import realMadridLogo from "@/assets/real-madrid-logo.png";
 import gojoSatoru from "@/assets/gojo-satoru.png";
+import sukuna from "@/assets/sukuna.png";
 
 const roles = ["Web Developer", "Software Engineer", "Full-Stack Developer", "UI/UX Enthusiast"];
 
@@ -110,6 +111,21 @@ const HeroSection = () => {
             </a>
           </div>
         </motion.div>
+      </div>
+
+      {/* Sukuna - left side */}
+      <div
+        aria-hidden="true"
+        className="hidden lg:block absolute left-4 bottom-0 z-20"
+      >
+        <img
+          src={sukuna}
+          alt="Sukuna"
+          width={512}
+          height={768}
+          loading="lazy"
+          className="h-[28rem] xl:h-[32rem] w-auto drop-shadow-[0_0_20px_hsl(var(--primary)/0.4)]"
+        />
       </div>
 
       {/* Gojo Satoru - right side */}
