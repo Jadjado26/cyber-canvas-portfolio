@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import profileAvatar from "@/assets/profile-avatar.png";
-import kitBrawler from "@/assets/kit-brawler.png";
+import surgeBrawler from "@/assets/surge-brawler.png";
 
 const stats = [
   { label: "LEVEL", value: "25" },
@@ -38,13 +38,13 @@ const AboutSection = () => (
               <img src={profileAvatar} alt="Developer profile" className="w-full h-full object-cover" width={512} height={512} loading="lazy" />
             </div>
             <a
-              href="https://brawlstars.fandom.com/wiki/Kit"
+              href="https://brawlstars.fandom.com/wiki/Surge"
               target="_blank"
               rel="noopener noreferrer"
               className="absolute -bottom-4 -right-4 w-20 h-20 border border-primary bg-background overflow-hidden glow-box hover:scale-110 transition-transform duration-200"
-              aria-label="View Kit brawler info"
+              aria-label="View Surge brawler info"
             >
-              <img src={kitBrawler} alt="Kit brawler from Brawl Stars" className="w-full h-full object-cover" width={512} height={512} loading="lazy" />
+              <img src={surgeBrawler} alt="Surge brawler from Brawl Stars" className="w-full h-full object-cover" width={512} height={512} loading="lazy" />
             </a>
           </div>
         </motion.div>
