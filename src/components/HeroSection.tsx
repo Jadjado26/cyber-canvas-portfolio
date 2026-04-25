@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import brawlStarsLogo from "@/assets/brawl-stars-logo.png";
+import realMadridLogo from "@/assets/real-madrid-logo.png";
+import itadoriYuji from "@/assets/itadori-yuji.png";
 
 const roles = ["Web Developer", "Software Engineer", "Full-Stack Developer", "UI/UX Enthusiast"];
 
@@ -73,7 +75,7 @@ const HeroSection = () => {
               CONTACT ME
             </a>
           </div>
-          <div className="mt-10 flex justify-center">
+          <div className="mt-10 flex items-center justify-center gap-8 flex-wrap">
             <a
               href="https://supercell.com/en/games/brawlstars/"
               target="_blank"
@@ -90,9 +92,43 @@ const HeroSection = () => {
                 className="h-40 md:h-56 w-auto"
               />
             </a>
+            <a
+              href="https://www.realmadrid.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block hover:scale-105 transition-transform duration-200"
+              aria-label="Real Madrid"
+            >
+              <img
+                src={realMadridLogo}
+                alt="Real Madrid logo"
+                width={512}
+                height={512}
+                loading="lazy"
+                className="h-40 md:h-56 w-auto"
+              />
+            </a>
           </div>
         </motion.div>
       </div>
+
+      {/* Itadori Yuji - right side */}
+      <a
+        href="https://www.roblox.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Roblox"
+        className="hidden lg:block absolute right-4 bottom-0 z-20 hover:scale-105 transition-transform duration-200"
+      >
+        <img
+          src={itadoriYuji}
+          alt="Itadori Yuji"
+          width={512}
+          height={768}
+          loading="lazy"
+          className="h-[28rem] xl:h-[32rem] w-auto drop-shadow-[0_0_20px_hsl(var(--primary)/0.4)]"
+        />
+      </a>
 
       {/* Decorative corners */}
       <div className="absolute top-8 left-8 w-16 h-16 border-t border-l border-border/30" />
