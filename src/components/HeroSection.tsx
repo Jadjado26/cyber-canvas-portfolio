@@ -87,7 +87,7 @@ const HeroSection = () => {
                 width={1024}
                 height={512}
                 loading="lazy"
-                className="h-20 md:h-24 w-auto"
+                className="h-40 md:h-56 w-auto"
               />
             </a>
           </div>
