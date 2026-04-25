@@ -45,8 +45,8 @@ const HeroSection = () => {
           <p className="text-xs tracking-[0.4em] text-muted-foreground mb-6 font-mono">
             // HELLO WORLD
           </p>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-wider text-primary glow mb-6">
-            JADTHEGOAT
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-wider text-primary glow mb-6">
+            JADTHEGOATINFORMATION
           </h1>
           <div className="h-8 mb-8">
             <span className="font-mono text-lg md:text-xl text-muted-foreground">
