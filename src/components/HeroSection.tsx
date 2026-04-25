@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import brawlStarsLogo from "@/assets/brawl-stars-logo.png";
 import realMadridLogo from "@/assets/real-madrid-logo.png";
-import itadoriYuji from "@/assets/itadori-yuji.png";
+import gojoSatoru from "@/assets/gojo-satoru.png";
 
 const roles = ["Web Developer", "Software Engineer", "Full-Stack Developer", "UI/UX Enthusiast"];
 
@@ -112,7 +112,7 @@ const HeroSection = () => {
         </motion.div>
       </div>
 
-      {/* Itadori Yuji - right side */}
+      {/* Gojo Satoru - right side */}
       <a
         href="https://www.roblox.com/"
         target="_blank"
@@ -121,8 +121,8 @@ const HeroSection = () => {
         className="hidden lg:block absolute right-4 bottom-0 z-20 hover:scale-105 transition-transform duration-200"
       >
         <img
-          src={itadoriYuji}
-          alt="Itadori Yuji"
+          src={gojoSatoru}
+          alt="Gojo Satoru"
           width={512}
           height={768}
           loading="lazy"
