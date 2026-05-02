@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import brawlStarsLogo from "@/assets/brawl-stars-logo.png";
 import realMadridLogo from "@/assets/real-madrid-logo.png";
 import gojoSatoru from "@/assets/gojo-satoru.png";
+import jjkVol1 from "@/assets/jjk-vol1.jpg";
+import jjkVol2 from "@/assets/jjk-vol2.jpg";
+import jjkVol3 from "@/assets/jjk-vol3.jpg";
 
 
 const roles = ["Web Developer", "Software Engineer", "Full-Stack Developer", "UI/UX Enthusiast"];
@@ -109,6 +112,27 @@ const HeroSection = () => {
                 className="h-40 md:h-56 w-auto"
               />
             </a>
+          </div>
+          <div className="mt-10 flex items-center justify-center gap-6 flex-wrap">
+            {[
+              { src: jjkVol1, alt: "Jujutsu Kaisen Vol. 1" },
+              { src: jjkVol2, alt: "Jujutsu Kaisen Vol. 2" },
+              { src: jjkVol3, alt: "Jujutsu Kaisen Vol. 3" },
+            ].map((vol) => (
+              <div
+                key={vol.alt}
+                className="rounded-lg overflow-hidden border border-border/30 hover:scale-105 hover:border-primary/50 transition-all duration-300 shadow-lg"
+              >
+                <img
+                  src={vol.src}
+                  alt={vol.alt}
+                  width={200}
+                  height={300}
+                  loading="lazy"
+                  className="h-48 md:h-64 w-auto"
+                />
+              </div>
+            ))}
           </div>
         </motion.div>
       </div>
