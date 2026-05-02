@@ -94,15 +94,15 @@ const HeroSection = () => {
               />
             </a>
             <a
-              href="https://www.realmadrid.com/"
+              href="https://www.fcbarcelona.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block hover:scale-105 transition-transform duration-200"
-              aria-label="Real Madrid"
+              aria-label="FC Barcelona"
             >
               <img
                 src={realMadridLogo}
-                alt="Real Madrid logo"
+                alt="FC Barcelona logo"
                 width={512}
                 height={512}
                 loading="lazy"
