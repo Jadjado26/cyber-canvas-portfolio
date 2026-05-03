@@ -3,9 +3,26 @@ import { motion } from "framer-motion";
 import brawlStarsLogo from "@/assets/brawl-stars-logo.png";
 import realMadridLogo from "@/assets/real-madrid-logo.png";
 import gojoSatoru from "@/assets/gojo-satoru.png";
-import jjkVol1 from "@/assets/jjk-vol1.jpg";
-import jjkVol2 from "@/assets/jjk-vol2.jpg";
-import jjkVol3 from "@/assets/jjk-vol3.jpg";
+
+// JJK volume covers
+import jjkVol1 from "@/assets/jjk/vol1.jpg";
+import jjkVol2 from "@/assets/jjk/vol2.jpg";
+import jjkVol3 from "@/assets/jjk/vol3.jpg";
+import jjkVol4 from "@/assets/jjk/vol4.jpg";
+import jjkVol5 from "@/assets/jjk/vol5.jpg";
+import jjkVol6 from "@/assets/jjk/vol6.jpg";
+import jjkVol7 from "@/assets/jjk/vol7.jpg";
+import jjkVol8 from "@/assets/jjk/vol8.jpg";
+import jjkVol13 from "@/assets/jjk/vol13.jpg";
+import jjkVol14 from "@/assets/jjk/vol14.jpg";
+
+const jjkCovers: Record<number, string> = {
+  1: jjkVol1, 2: jjkVol2, 3: jjkVol3, 4: jjkVol4,
+  5: jjkVol5, 6: jjkVol6, 7: jjkVol7, 8: jjkVol8,
+  13: jjkVol13, 14: jjkVol14,
+};
+
+const JUMIA_URL = "https://www.jumia.ma/";
 
 
 const roles = ["Web Developer", "Software Engineer", "Full-Stack Developer", "UI/UX Enthusiast"];
