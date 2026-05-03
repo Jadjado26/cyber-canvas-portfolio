@@ -138,35 +138,24 @@ const HeroSection = () => {
               // Ces mangas sont en vente — cliquez pour acheter sur Jumia
             </p>
             <div className="flex items-center justify-center gap-4 flex-wrap max-w-4xl mx-auto">
-              {Array.from({ length: 27 }, (_, i) => i + 1).map((vol) => {
-                const cover = jjkCovers[vol];
-                return (
-                  <a
-                    key={vol}
-                    href={JUMIA_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-lg overflow-hidden border border-border/30 hover:scale-105 hover:border-primary/50 transition-all duration-300 shadow-lg group"
-                  >
-                    {cover ? (
-                      <img
-                        src={cover}
-                        alt={`Jujutsu Kaisen Vol. ${vol}`}
-                        width={140}
-                        height={210}
-                        loading="lazy"
-                        className="h-40 md:h-52 w-auto"
-                      />
-                    ) : (
-                      <div className="h-40 md:h-52 w-[107px] md:w-[140px] bg-gradient-to-b from-muted/50 to-background flex flex-col items-center justify-center gap-2">
-                        <span className="font-display text-xs tracking-widest text-muted-foreground">JJK</span>
-                        <span className="font-display text-2xl font-bold text-primary glow">{vol}</span>
-                        <span className="text-[10px] font-mono text-muted-foreground group-hover:text-primary transition-colors">ACHETER</span>
-                      </div>
-                    )}
-                  </a>
-                );
-              })}
+              {Object.entries(jjkCovers).map(([vol, cover]) => (
+                <a
+                  key={vol}
+                  href={JUMIA_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg overflow-hidden border border-border/30 hover:scale-105 hover:border-primary/50 transition-all duration-300 shadow-lg"
+                >
+                  <img
+                    src={cover}
+                    alt={`Jujutsu Kaisen Vol. ${vol}`}
+                    width={140}
+                    height={210}
+                    loading="lazy"
+                    className="h-40 md:h-52 w-auto"
+                  />
+                </a>
+              ))}
             </div>
           </div>
         </motion.div>
