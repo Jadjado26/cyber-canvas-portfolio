@@ -13,13 +13,15 @@ import jjkVol5 from "@/assets/jjk/vol5.jpg";
 import jjkVol6 from "@/assets/jjk/vol6.jpg";
 import jjkVol7 from "@/assets/jjk/vol7.jpg";
 import jjkVol8 from "@/assets/jjk/vol8.jpg";
-import jjkVol13 from "@/assets/jjk/vol13.jpg";
-import jjkVol14 from "@/assets/jjk/vol14.jpg";
+import jjkVol9 from "@/assets/jjk/vol9.jpg";
+import jjkVol10 from "@/assets/jjk/vol10.jpg";
+import jjkVol11 from "@/assets/jjk/vol11.jpg";
+import jjkVol12 from "@/assets/jjk/vol12.jpg";
 
 const jjkCovers: Record<number, string> = {
   1: jjkVol1, 2: jjkVol2, 3: jjkVol3, 4: jjkVol4,
   5: jjkVol5, 6: jjkVol6, 7: jjkVol7, 8: jjkVol8,
-  13: jjkVol13, 14: jjkVol14,
+  9: jjkVol9, 10: jjkVol10, 11: jjkVol11, 12: jjkVol12,
 };
 
 const JUMIA_URL = "https://www.jumia.ma/";
