@@ -3,9 +3,26 @@ import { motion } from "framer-motion";
 import brawlStarsLogo from "@/assets/brawl-stars-logo.png";
 import realMadridLogo from "@/assets/real-madrid-logo.png";
 import gojoSatoru from "@/assets/gojo-satoru.png";
-import jjkVol1 from "@/assets/jjk-vol1.jpg";
-import jjkVol2 from "@/assets/jjk-vol2.jpg";
-import jjkVol3 from "@/assets/jjk-vol3.jpg";
+
+// JJK volume covers
+import jjkVol1 from "@/assets/jjk/vol1.jpg";
+import jjkVol2 from "@/assets/jjk/vol2.jpg";
+import jjkVol3 from "@/assets/jjk/vol3.jpg";
+import jjkVol4 from "@/assets/jjk/vol4.jpg";
+import jjkVol5 from "@/assets/jjk/vol5.jpg";
+import jjkVol6 from "@/assets/jjk/vol6.jpg";
+import jjkVol7 from "@/assets/jjk/vol7.jpg";
+import jjkVol8 from "@/assets/jjk/vol8.jpg";
+import jjkVol13 from "@/assets/jjk/vol13.jpg";
+import jjkVol14 from "@/assets/jjk/vol14.jpg";
+
+const jjkCovers: Record<number, string> = {
+  1: jjkVol1, 2: jjkVol2, 3: jjkVol3, 4: jjkVol4,
+  5: jjkVol5, 6: jjkVol6, 7: jjkVol7, 8: jjkVol8,
+  13: jjkVol13, 14: jjkVol14,
+};
+
+const JUMIA_URL = "https://www.jumia.ma/";
 
 
 const roles = ["Web Developer", "Software Engineer", "Full-Stack Developer", "UI/UX Enthusiast"];
@@ -113,26 +130,44 @@ const HeroSection = () => {
               />
             </a>
           </div>
-          <div className="mt-10 flex items-center justify-center gap-6 flex-wrap">
-            {[
-              { src: jjkVol1, alt: "Jujutsu Kaisen Vol. 1" },
-              { src: jjkVol2, alt: "Jujutsu Kaisen Vol. 2" },
-              { src: jjkVol3, alt: "Jujutsu Kaisen Vol. 3" },
-            ].map((vol) => (
-              <div
-                key={vol.alt}
-                className="rounded-lg overflow-hidden border border-border/30 hover:scale-105 hover:border-primary/50 transition-all duration-300 shadow-lg"
-              >
-                <img
-                  src={vol.src}
-                  alt={vol.alt}
-                  width={200}
-                  height={300}
-                  loading="lazy"
-                  className="h-48 md:h-64 w-auto"
-                />
-              </div>
-            ))}
+          <div className="mt-12">
+            <h2 className="font-display text-2xl md:text-3xl font-bold tracking-wider text-primary glow mb-2">
+              JUJUTSU KAISEN
+            </h2>
+            <p className="font-mono text-sm text-muted-foreground mb-6">
+              // Ces mangas sont en vente — cliquez pour acheter sur Jumia
+            </p>
+            <div className="flex items-center justify-center gap-4 flex-wrap max-w-4xl mx-auto">
+              {Array.from({ length: 27 }, (_, i) => i + 1).map((vol) => {
+                const cover = jjkCovers[vol];
+                return (
+                  <a
+                    key={vol}
+                    href={JUMIA_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-lg overflow-hidden border border-border/30 hover:scale-105 hover:border-primary/50 transition-all duration-300 shadow-lg group"
+                  >
+                    {cover ? (
+                      <img
+                        src={cover}
+                        alt={`Jujutsu Kaisen Vol. ${vol}`}
+                        width={140}
+                        height={210}
+                        loading="lazy"
+                        className="h-40 md:h-52 w-auto"
+                      />
+                    ) : (
+                      <div className="h-40 md:h-52 w-[107px] md:w-[140px] bg-gradient-to-b from-muted/50 to-background flex flex-col items-center justify-center gap-2">
+                        <span className="font-display text-xs tracking-widest text-muted-foreground">JJK</span>
+                        <span className="font-display text-2xl font-bold text-primary glow">{vol}</span>
+                        <span className="text-[10px] font-mono text-muted-foreground group-hover:text-primary transition-colors">ACHETER</span>
+                      </div>
+                    )}
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </motion.div>
       </div>
