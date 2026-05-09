@@ -5,6 +5,7 @@ import realMadridLogo from "@/assets/real-madrid-logo.png";
 import gojoSatoru from "@/assets/gojo-satoru.png";
 
 // JJK volume covers
+import jjkVol0 from "@/assets/jjk/vol0.jpg";
 import jjkVol1 from "@/assets/jjk/vol1.jpg";
 import jjkVol2 from "@/assets/jjk/vol2.jpg";
 import jjkVol3 from "@/assets/jjk/vol3.jpg";
@@ -19,6 +20,7 @@ import jjkVol11 from "@/assets/jjk/vol11.jpg";
 import jjkVol12 from "@/assets/jjk/vol12.jpg";
 
 const jjkCovers: Record<number, string> = {
+  0: jjkVol0,
   1: jjkVol1, 2: jjkVol2, 3: jjkVol3, 4: jjkVol4,
   5: jjkVol5, 6: jjkVol6, 7: jjkVol7, 8: jjkVol8,
   9: jjkVol9, 10: jjkVol10, 11: jjkVol11, 12: jjkVol12,
