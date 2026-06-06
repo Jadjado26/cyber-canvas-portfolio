@@ -50,10 +50,9 @@ const AboutSection = () => (
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <p className="text-muted-foreground font-mono text-sm leading-relaxed mb-8">
-            Hey, I'm Jad — a developer who loves building cool stuff on the web. I created this
-            site so you can get to know everything about me. When I'm not coding, you'll find me
-            grinding on Brawl Stars, hitting the field for some football, dropping buckets on
-            the basketball court, or spiking on the volleyball court. Game on. 🎮⚽🏀🏐
+            Hey, I'm Jad — a developer and web gamer who builds interactive sites, game UIs, and
+            responsive experiences. I created this site to showcase my coding skills and my
+            passion for modern design, gameplay interfaces, and real-time browser interactions.
           </p>
 
           <div className="grid grid-cols-2 gap-4">

@@ -43,9 +43,9 @@ const SkillsSection = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <p className="text-xs tracking-[0.4em] text-muted-foreground mb-2 font-mono">// SKILLS</p>
+        <p className="text-xs tracking-[0.4em] text-muted-foreground mb-2 font-mono">// LOADOUT</p>
         <h2 className="font-display text-3xl md:text-4xl font-bold text-primary tracking-wider mb-12 glow">
-          SKILL TREE
+          GAME DEV SKILLS
         </h2>
       </motion.div>
 

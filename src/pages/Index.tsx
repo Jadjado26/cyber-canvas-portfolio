@@ -4,6 +4,8 @@ import TerminalLoader from "@/components/TerminalLoader";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import MyFunSection from "@/components/MyFunSection";
+import GooglePhotoSection from "@/components/GooglePhotoSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
@@ -24,6 +26,8 @@ const Index = () => {
           <Navbar />
           <HeroSection />
           <AboutSection />
+          <MyFunSection />
+          <GooglePhotoSection />
           <SkillsSection />
           <ProjectsSection />
           <ContactSection />
